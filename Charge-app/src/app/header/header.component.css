@@ -1,0 +1,95 @@
+.container{
+    display: flex;
+    top: 0;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    height: 80px;
+    margin: 0;
+    padding: 0;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+    align-items: center;
+
+    z-index: 50!important;
+
+    font-family: 'Roboto Slab';
+}
+
+.logo{
+    margin-left: 60px;
+    height: 40px;
+    /*top: 18px;*/
+    /*position: absolute;*/
+    width: 250px;
+    object-fit: contain;
+    background-color:transparent;
+    flex: 1;
+}
+
+.painel-avatar{
+    /*position: absolute;*/
+    
+    /*
+    top:15px;
+    right: 0px;*/
+    margin-right: 100px;
+    flex: 0.2;
+    display: flex;
+}
+
+.painel-avatar > p{
+    margin-right: 10px;
+    width: auto;
+    text-align: right;
+}
+
+.painel-avatar > h5{
+    margin-left: 10px;
+}
+
+
+.avatar{
+    border-radius: 50px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+    width: 48px;
+    height: 48px;
+}
+
+
+
+/* If the screen size is 601px or more, set the font-size of <div> to 80px */
+@media only screen and (min-width: 601px) {
+    .menu{
+        display: flex;
+        font-size: 16px;
+        /*background-color: tomato;*/
+        flex:auto;
+        visibility: visible;
+        opacity: 1;
+        transition: 0.5s;
+    }
+
+
+    .painel-avatar{
+        visibility: visible;
+        opacity: 1;
+        transition: 0.5s;
+    }
+    
+  }
+  
+  /* If the screen size is 600px or less, set the font-size of <div> to 30px */
+  @media only screen and (max-width: 600px) {
+    .menu{
+        visibility: hidden;
+        opacity: 0;
+        transition: 0.5s;
+    }
+
+    .painel-avatar{
+        visibility: hidden;
+        opacity: 0;
+        transition: 0.5s;
+    }
+    
+  }
+
